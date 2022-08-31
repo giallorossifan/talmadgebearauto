@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BearRepair</title>
+
+    <style>
+
+            
+            /* * selects any an all types of elements in HTML page */
+            * {
+            box-sizing: border-box;
+        
+            }
+        
+        
+    body {
+                    background-color: black;
+                    padding: 0;
+                    margin: 0;
+                    background-image: url("https://images.unsplash.com/photo-1518842013791-b874be246c34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80") ;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+               
+    #layout     {
+        
+                    display: flex;
+                    flex-wrap: wrap;       
+                    }
+               
+        #topbars {
+                    flex-basis: 100%;
+                    /* border: 1px solid black; */
+                    /* flex-direction: row; */
+                    height: 200px;
+                    /* background-color: blueviolet; */
+        
+                    
+                    display: flex;
+                    padding-top: 2%;
+                    /* padding-bottom: 10%; */
+                    column-gap: 60px;
+                    padding: 10%;        
+                    }
+        
+        
+                 #sidebar1   {
+                        flex-basis: 33.33%;
+                        /* background-color: aqua; */
+                        border: 1px solid black;
+                        width: 100px;
+                        /* height: 100px;    */
+                        /* width: 100px; */
+                       text-align: center;
+                       /* .upper > div { */
+                        border-radius: 80px;
+                        padding: 2%;
+                        height: min-content;
+                        width: min-content;
+                        background: linear-gradient(45deg,black,gray);
+                        box-shadow: 10px 10px gray;
+                        
+                        
+                        
+                        }
+                
+                  #sidebar2   { 
+                         background-image: url("https://i.ibb.co/g91kqWQ/Logo-Makr-7-Oh-OTu.png");
+                        flex-basis: 33.33%;
+
+                          
+                        /* background-color: gray; */
+                        /* width: 100px; */
+                        /* height: 100px;   */
+                        /* width: 100px; */
+                        background-size: contain;
+                        /* background-size:300px; */
+                        background-repeat: no-repeat;
+                        background-position: center;
+                       /* background-color: gray; */
+                      
+                       /* margin-top: -50px; */
+                       height: 200px;
+                        /* width: 2000px; */
+                        border-top-left-radius: 40px;
+                        border-bottom-left-radius: 40px;
+                        border-top-right-radius: 40px;
+                        border-bottom-right-radius: 40px;
+                        border: 10px solid black;
+                        padding: auto;
+                      
+                       
+                        
+                        
+                    } 
+                    /* #bearlogo{
+                        flex-basis: 33.33%;
+                        position: center;
+                           
+                    } */
+                  #sidebar3  
+                  {
+                        flex-basis: 33.33%;
+                        /* background-color: goldenrod; */
+                        /* width: 100px; */
+                        height: 100px;  
+                        /* width: 100px; */
+                        text-align: center;
+                        border: 1px solid black;
+                        border-radius: 80px;
+                        padding: 2%;
+                        height: min-content;
+                        width: min-content;
+                        background: linear-gradient(45deg,black,gray);
+                       box-shadow: 10px 10px gray;
+                        display: inline;
+                        
+                    } 
+                 #sidebar1, #sidebar3{
+                            font-size: 50px;
+                            font-family: fantasy;
+                            font-style: oblique;
+                            color: aliceblue;
+
+                            }
+        #content1     
+             {
+                        font-size: 30px;
+                        font-family: fantasy;
+                        font-style: oblique;
+
+                        flex-basis: 100%;
+                        display: flex;
+                        column-gap: 60px;
+                        padding-left: 15%;
+                        /* background-color: brown; */
+                        /* border: 1px solid rgba(13, 130, 21, 0.649); */
+                        color: aliceblue;
+                        height:min-content;
+                        text-align:center;
+                        padding-top: 140px;
+                        
+                        
+                        
+        
+                        }
+         
+                 h2{
+                        text-shadow: 10px 10px orangered;
+                        font-size: 75px;
+                      } 
+                 #words
+                 {
+                        /* border: 2px solid green; */
+                        flex-basis: 80%;
+                        font-family:sans-serif;
+                        text-align: left;
+                        font-style: italic;
+                        border: 1px solid black;
+                        /* width: 100px; */
+                        /* height: 100px;    */
+                        /* width: 100px; */
+                       text-align: center;
+                       /* .upper > div { */
+                        border-radius: 80px;
+                        padding: 2%;
+                        height: min-content;
+                        width: min-content;
+                        background: linear-gradient(45deg,black,gray);
+                        box-shadow: 10px 10px gray;            
+                        
+                        }
+
+
+         #content2    
+                 {
+        
+                            flex-basis: 100%;
+                            /* background-color: rgb(157, 165, 42); */
+                            height: min-content;
+                            display: flex;
+                            column-gap: 75px;
+                            padding: 2%;
+                            padding-left: 2%;
+                            padding-right: 5%;
+                  }
+        
+
+                     #oilchange, #fluids, #tireair
+                     {
+                        flex-basis: 33.33%;
+                        /* background-color: aqua; */
+                        /* border: 1px solid black; */
+                        /* width: 100px; */
+                        height: 100px; 
+                        width: 200px; 
+                        /* width: 100px; */
+                        text-align: center;
+                       /* .upper > div { */
+                        box-shadow: 10px 10px gray;
+
+                      
+                                    }
+                         #oilchange
+                             {
+                        background-image: url("https://as2.ftcdn.net/v2/jpg/02/36/90/13/1000_F_236901374_aqlTX6FZorFdQjreTjVaUpoE0x5AJ7fk.jpg");
+                       background-repeat: no-repeat;
+                        background-size: cover;
+                        border-radius: 80px;
+                        height: 170px;
+                        color: aliceblue;
+                        padding-top: 50px;
+                        font-family: fantasy;
+                        font-size:30px;
+                        background-position: center;
+                        transition: all 3s;
+                        
+                               }
+            
+            
+                              #oilchange:hover{
+                    
+                    font-size: 40px;
+                    color:aliceblue;
+                    transition: font-size 3s;
+                   
+                    
+                                      } 
+                              #oilchange:hover::after{
+                    content: 'Provide/bring  your own oil and filter. $15 oil change and Tire inflate';
+                    font-size: 20px;
+                    color:aliceblue;
+                   
+                    
+                                      } 
+
+
+                    
+                     #tireair
+                         {
+                    background-image: url("https://cdn.pixabay.com/photo/2013/03/10/06/39/auto-92129_960_720.jpg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 80px;
+                    height: 150px;
+                    color: aliceblue;
+                    padding-top: 50px;
+                    font-family: fantasy;
+                    font-size:xx-large;
+                    font-style: italic;
+                    background-position: center;
+                    transition: all 3s;
+                             }
+
+                             #tireair:hover{
+                    
+                    font-size: 40px;
+                    transition: all 2s;
+                    
+                               }  
+                             #tireair:hover::after{
+                    content: 'Complimentary air inflate with oil change';
+                    font-size: 20px;
+                    
+                                }      
+                     #fluids
+                     {
+                    background-image: url("https://media.istockphoto.com/photos/engine-repair-and-service-picture-id1254355930?k=20&m=1254355930&s=612x612&w=0&h=wVkCE7tNqY8BQiKWt9B7ZZj8F43nB8UjjQOW4sPOsyA=");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    border-radius: 80px;
+                    height: 150px;
+                    color: aliceblue;
+                    padding-top: 50px;
+                    font-family: fantasy;
+                    font-size:xx-large;
+                    font-style: italic;
+                    background-position: center;
+                    transition: all 3s;
+                    
+                           }
+            
+                         #fluids:hover{
+                    font-size: 40px;
+                    
+                    transition: all 2s;
+
+                    
+                           }
+                           #fluids:hover::after{
+                    content: 'Ask about any issues your car has and I may be able to fix the issue';
+                    font-size: 20px;
+                    
+                              }
+        
+        #footers
+                      {
+                            flex-basis: 100%;
+                            display: flex;
+                            /* flex-wrap: wrap; */
+                            /* border: 1px solid black; */
+                            /* background-color: tomato; */
+                            height: 400px;
+                            padding: 20px;
+                            column-gap: 40px;
+                        }
+        
+             #footer1       
+                 {
+                            flex-basis: 50%;
+                            /* background-color: palegreen; */
+        
+                            }
+        
+                #location, #contact, #services{
+                                    border: 2px solid black;
+                                    border-radius: 60px;
+                                    font-family: fantasy;
+                                    height: fit-content;
+                                    width:min-content;
+                                    padding: 10px;
+                                     color: aliceblue; 
+                                     font-size: 50px;
+                                     font-weight: 100;
+                                     background: linear-gradient(45deg, gray,black );
+                                    /* background-color: black; */
+                                    box-shadow: 10px 10px gray;
+                                    transition: all 3s ease-out;
+                                   
+                                }
+                     a{
+                        color: aliceblue;
+                        text-decoration: none;
+                        }           
+               
+                     #contact:before{
+                    content: 'Contact';
+                    
+                        }                  
+                     #contact:hover{
+                                font-size: 25px;      
+                        }
+
+                     #contact:hover::after{
+                                
+                                content:"talmadgebearauto@gmail.com";
+                                font-size: 25px;         
+                        }
+                
+                     #services:hover{
+                    content:attr(data-hover);
+                    font-size: 40px;
+                      transition: all 2s;
+                                 
+                        }
+                     #services:hover::after{
+                    content:attr(data-hover);
+                      font-size: 20px; 
+                                  
+                        }
+                    #location:hover{
+                    font-size: 40px;
+                    transition: all 2s;
+                    
+                        }
+
+                     #location:hover::after {
+                    content: '4419 Monroe Ave. San Diego, CA';
+
+                    font-size: 20px;
+                        }            
+        
+             #footer2        {
+                            flex-basis: 50%;
+                            /* background-color: salmon; */
+                            } 
+        
+       
+        
+        
+        
+                    /* make sidebar dissapear  */
+                    @media (max-width:700px){
+        
+                            #content1{
+                            flex-wrap: wrap;
+                            display: none; 
+                                 
+                                    }
+        
+        
+                                            }
+        
+        
+        
+        
+                    @media (max-width:700px)
+                                             {
+                        #topbars {
+                                    flex-wrap: wrap;
+                                    height:fit-content;
+                                    row-gap: 60px;
+        
+                                    }
+                        #sidebar1, #sidebar2, #sidebar3{
+                                        flex-basis: 100%;
+                                                        }
+                                                 }
+                    
+
+                    @media (max-width:700px)
+                                             {
+                        #content2 {
+
+                                    flex-wrap: wrap;
+                                    height:fit-content;
+                                    row-gap:60px;
+                                  
+                                    
+        
+                                    }
+                        #tireair, #oilchange, #fluids{
+                                        flex-basis: 100%;
+                                      
+                                                    }
+                                                 }
+        
+        
+        
+                    @media (max-width:650px) {
+        
+                        #footers {
+        
+                                flex-wrap: wrap;
+                                row-gap: 20px;
+                                height: min-content;
+        
+                                }
+        
+                        #footer1,#footer2 {
+        
+                            flex-basis: 100%;
+                                            }  
+                                                 }
+        
+        
+    </style>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+</head>
+        <body>
+        
+        
+        
+            <div id="layout">
+                <div id="topbars">
+        
+        
+                            <div id="sidebar1">
+        
+                               Talmadge
+        
+                            </div>
+        
+        
+        
+                            <div id="sidebar2">
+        
+                                <!-- <a href="https://imgbb.com/" id="bearlogo"><img src="https://i.ibb.co/g91kqWQ/Logo-Makr-7-Oh-OTu.png" alt="Talmadge Bear Logo" border="0" width="300px" height="300px"></a> -->
+        
+        
+                            </div>
+        
+        
+        
+        
+        
+                            <div id="sidebar3">
+        
+                                Oil Change
+        
+        
+        
+        
+        
+                            </div>
+        
+        
+        
+        
+        
+        
+                </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                    <div id="content1">
+                           
+                         
+                         
+                        <div id="words">
+                            <center>
+                            <h2>
+                             Talmadge West Oil 
+                            </h2>
+                            </center>
+                             <br>  
+                             <h5 id="paragraph">Welcome to your local oil change right here in Beutiful Talmadge West San Diego.
+                                I'm an amateur mechanic that loves learning about automobiles on my spare time.
+                                My curiousity and financial situation engaged me on a auto learning journey. We use 
+                                our vehicles to transport us to so many essential and fun journeys in our life, so 
+                                taking care of our vehicles' well being is extremely important. Oil changes, are the 
+                                single most import routine service to keep our vehicles running for a long time. 
+                                Your oil change will always be done with your choice of oil and filter. You can bring
+                                your own oil and filter and I will take care of the rest. I am not a professional 
+                                mechanic, however I am able to help you with  other vehicle issues you may have. If your
+                                issues are beyond my scope I will let you know. I am always happy to help expand my knowledge of vehicles and share with you my thoughts.  
+    
+                                </h4>
+                        </div>
+                            
+        
+                           
+        
+        
+                    </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                    <div id="content2">
+        
+                            <center>
+                            <h1>
+                             
+                            </h1>
+                            </center>
+        
+                            <div id="tireair">
+                                Tire Air
+                            </div>
+
+                            <div id="oilchange">
+                                Oil Change
+                            </div>
+
+                            <div id="fluids">
+                              Miscellaneous
+                            </div>
+        
+        
+        
+        
+                    </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                    <div id="footers">
+        
+        
+        
+        
+                                <div id="footer1">
+        
+                                        
+                                       <center>
+                                        <h1>
+                                         <div id="location">
+                                            <a href="http://google.com"> Location </a> </div>  
+                                        </h1>
+                                        </center>
+
+                                        <center>
+                                        <h1>
+                                        <div id="contact"> </div>  
+                                        <!-- <div id="dopo"> djsalas2133@gmail.com </div> -->
+                                        </h1>
+                                        </center>
+        
+        
+        
+                                </div>
+                                
+                                        
+        
+        
+        
+        
+        
+        
+        
+                                <div id="footer2">
+                                        <center>
+                                        <h1>
+                                            <div id="services" class="servicess" data-hover="Oil Change Battery Service  Tire Inflate ">
+                                         Services 
+                                        
+                                            </div>
+                                        </h1>
+                                       </center>      
+                                </div>  
+                                
+                                <!-- <div id="hoverservicess"> -->
+                                <!-- <div class="data-hover">
+                                    <ul>
+                                        <li><h4>Services</h4></li>
+                                        <li>Oil Change</li>
+                                        <li>Tire Inflate</li>
+                                        <li>Battery Service</li>
+                                        <li>Miscellaneous</li>
+                                    </ul>
+                                </div>  -->
+                                    
+                            
+                                <!-- </div> -->
+        
+                    </div>
+        
+            </div>
+        
+        
+        
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            
+        </body>
+       <script>
+       
+
+       </script> 
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+   
